@@ -29,6 +29,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-talk]: https://talk.jekyllrb.com/
 
 
-![Moving between Storage Classes](/AWS-CertifiedDeveloper-Notes/AWS-CertifiedDeveloper-Notes/docs/Assets/ReservedInstances.png)
+![Moving between Storage Classes](/AWS-CertifiedDeveloper-Notes/docs/assets/ReservedInstances.png)
 
-![Book logo](/AWS-CertifiedDeveloper-Notes/AWS-CertifiedDeveloper-Notes/docs/Assets/ReservedInstances.png)
+![Book logo](/AWS-CertifiedDeveloper-Notes/docs/assets/ReservedInstances.png)
