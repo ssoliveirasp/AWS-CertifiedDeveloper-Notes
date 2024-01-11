@@ -1,7 +1,7 @@
 # EC2: Virtual Machines
 
 - [EC2: Virtual Machines](#ec2-virtual-machines)
-  - [What is Amazon EC2?](#what-is-amazon-ec2)
+  - [What is Amazon EC2?](#O-que-e-Amazon-EC2)
     - [EC2 sizing \& configuration options](#ec2-sizing--configuration-options)
     - [EC2 User Data](#ec2-user-data)
     - [EC2 Instance Types - Overview](#ec2-instance-types---overview)
@@ -26,18 +26,19 @@
   - [Shared Responsibility Model for EC2](#shared-responsibility-model-for-ec2)
   - [EC2 Section - Summary](#ec2-section---summary)
 
-## What is Amazon EC2?
+## O que e Amazon EC2?
 
-Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) Cloud.
+  Definição
+  - Fornece capacidade de computação escalável na nuvem da Amazon Web Services (AWS).
+  - EC2 = Elastic Compute Cloud = Infrastructure as a Service  (IaaS)
 
-- EC2 = Elastic Compute Cloud = Infrastructure as a Service
-- It mainly consists in the capability of :
-  - Renting virtual machines (EC2)
-  - Storing data on virtual drives (EBS)
-  - Distributing load across machines (ELB)
-  - Scaling the services using an auto-scaling group (ASG)
-- Knowing EC2 is fundamental to understand how the Cloud works
-
+- Principais capacidades:
+  - Alugar máquinas virtuais (EC2)
+  - Armazenar dados em unidades virtuais (EBS)
+  - Distribuir carga entre maquinas (ELB)
+  - Escalar maquinas virtuais usando um grupo de auto-escalonamento (ASG)
+  
+  
 ### EC2 sizing & configuration options
 
 - Operating System (OS): Linux, Windows or Mac OS
@@ -151,7 +152,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity i
 
 ## EC2 Instance Launch Types
 
-- [**On Demand Instances**](#on-demand-instance): short workload, predictable pricing
+- ###[**On Demand Instances**](#on-demand-instance): short workload, predictable pricing
 - [**Reserved**](#reserved-instances): (1 & 3 years)
   - **Reserved Instances**: long workloads
   - **Convertible Reserved Instances**: long workloads with flexible instances
