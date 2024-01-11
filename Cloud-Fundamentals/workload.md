@@ -16,6 +16,6 @@ Workloads
   - Mudança Continua
   
 
-  - Referencias
-    - [Aws-Workload-Guide](https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloads.html)
-    - [Cloud-Computing-Patterns](https://www.cloudcomputingpatterns.org)
+- Referencias
+  - [Aws-Workload-Guide](https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloads.html)
+  - [Cloud-Computing-Patterns](https://www.cloudcomputingpatterns.org)
