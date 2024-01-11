@@ -1,7 +1,7 @@
 # EC2: Virtual Machines
 
 - [EC2: Virtual Machines](#ec2-virtual-machines)
-  - [What is Amazon EC2?](#O-que-e-Amazon-EC2)
+  - [O que e Amazon EC2?](#O-que-e-Amazon-EC2)
     - [EC2 sizing \& configuration options](#ec2-sizing--configuration-options)
     - [EC2 User Data](#ec2-user-data)
     - [EC2 Instance Types - Overview](#ec2-instance-types---overview)
@@ -28,7 +28,7 @@
 
 ## O que e Amazon EC2?
 
-  Definição
+- Definição
   - Fornece capacidade de computação escalável na nuvem da Amazon Web Services (AWS).
   - EC2 = Elastic Compute Cloud = Infrastructure as a Service  (IaaS)
 
