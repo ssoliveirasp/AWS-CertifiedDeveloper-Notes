@@ -122,7 +122,7 @@
 
 ## Deeper Dive
 
-- Os grupos de segurança estão associados a interfaces de rede (VPC).
+- Os grupos de segurança estão associados a interfaces de rede
 - Um grupo de segurança atua como firewall virtual para as instâncias do EC2 visando controlar o tráfego de entrada e de saída
 - Regular:
   - Acesso as Portas
