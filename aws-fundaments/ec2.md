@@ -10,7 +10,7 @@
       - [Memory Optimized](#memory-optimized)
       - [Storage Optimized](#storage-optimized)
   - [Introdução do grupo de seguranca](#introducao-grupo-de-seguranca)
-  - [Deeper Dive](#deeper-dive)
+      - [Deeper Dive](#deeper-dive)
   - [The fundamental of network security in AWS (Good to know)](#the-fundamental-of-network-security-in-aws-good-to-know)
   - [Classic Ports to know](#classic-ports-to-know)
   - [EC2 Instance Launch Types](#ec2-instance-launch-types)
