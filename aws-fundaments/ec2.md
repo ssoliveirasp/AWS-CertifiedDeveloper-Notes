@@ -9,7 +9,7 @@
       - [Compute Optimized](#compute-optimized)
       - [Memory Optimized](#memory-optimized)
       - [Storage Optimized](#storage-optimized)
-  - [Introduction to Security Groups](#introduction-to-security-groups)
+  - [Introdução do grupo de seguranca](#introducao-grupo-de-seguranca)
   - [Deeper Dive](#deeper-dive)
   - [The fundamental of network security in AWS (Good to know)](#the-fundamental-of-network-security-in-aws-good-to-know)
   - [Classic Ports to know](#classic-ports-to-know)
@@ -37,7 +37,6 @@
   - Armazenar dados em unidades virtuais (EBS)
   - Distribuir carga entre maquinas (ELB)
   - Escalar maquinas virtuais usando um grupo de auto-escalonamento (ASG)
-  
   
 ### EC2 sizing & configuration options
 
@@ -114,21 +113,22 @@
   - Data warehousing applications
   - Distributed file systems
 
-## Introduction to Security Groups
+## Introducao Grupo de Seguranca
 
-- Security Groups are the fundamental of network security in AWS
-- They control how traffic is allowed into or out of our EC2 Instances.
-- Security groups only contain **allow** rules
-- Security groups rules can reference by IP or by security group
+- Eles controlam como o tráfego é permitido para dentro ou fora de nossas instâncias EC2
+- Grupos de segurança são fundamentais para a segurança de rede na AWS.
+- Grupos de segurança tem somente regras **allow**
+- As regras de grupos de segurança podem fazer referência por IP ou por grupo de segurança
 
 ## Deeper Dive
 
-- Security groups are acting as a **“firewall”** on EC2 instances
-- They regulate:
-  - Access to Ports
-  - Authorised IP ranges – IPv4 and IPv6
-  - Control of inbound network (from other to the instance)
-  - Control of outbound network (from the instance to other)
+- Os grupos de segurança estão associados a interfaces de rede
+- Um grupo de segurança atua como firewall virtual para as instâncias do EC2 visando controlar o tráfego de entrada e de saída
+- Regular:
+  - Acesso as Portas
+  - Autorizar IP ranges – IPv4 and IPv6
+  - Controle da rede de entrada (de outra para a instância)
+  - Controle da rede de saída (de uma instância para outra)
 
 ## The fundamental of network security in AWS (Good to know)
 
