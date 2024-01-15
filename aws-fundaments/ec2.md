@@ -240,10 +240,10 @@
 ## EC2 Auto Scaling
 - [**Auto Scaling Policies**](#on-demand-instance)
 - [**Tipos**](#on-demand-instance): short workload, predictable pricing
-  - [**Manual Scaling**](#reserved-instances): (1 & 3 years)
-  - [**Dynamic Scaling**](#savings-plans) (1 & 3 years): commitment to an
-  - [**Predictive Scaling**](#savings-plans) (1 & 3 years): commitment to 
-  - [**Scheduled Scaling**](#savings-plans) (1 & 3 years): commitment to
+  - [**Manual Scaling**](#reserved-instances): 
+  - [**Dynamic Scaling**](#savings-plans):
+  - [**Predictive Scaling**](#savings-plans):
+  - [**Scheduled Scaling**](#savings-plans):
     
 ## Which purchasing option is right for me?
 
