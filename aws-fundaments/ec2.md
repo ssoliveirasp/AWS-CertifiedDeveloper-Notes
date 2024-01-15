@@ -76,7 +76,7 @@
   - 5: generation (AWS improves them over time)
   - 2xlarge: size within the instance class
 
-#### General Purpose (M)
+#### General Purpose
 
 - Great for a diversity of workloads such as web servers or code repositories
 - Balance between:
@@ -84,7 +84,7 @@
   - Memory
   - Networking
 
-#### Compute Optimized (C)
+#### Compute Optimized
 
 - Great for compute-intensive tasks that require high performance processors:
   - Batch processing workloads
@@ -94,7 +94,7 @@
   - Scientific modeling & machine learning
   - Dedicated gaming servers
 
-#### Memory Optimized (R)
+#### Memory Optimized 
 
 - Fast performance for workloads that process large data sets in memory
 - Use cases:
@@ -103,7 +103,7 @@
   - In-memory databases optimized for BI (business intelligence)
   - Applications performing real-time processing of big unstructured data
 
-#### Storage Optimized (I)
+#### Storage Optimized
 
 - Great for storage-intensive tasks that require high, sequential read and write access to large data sets on local storage
 - Use cases:
