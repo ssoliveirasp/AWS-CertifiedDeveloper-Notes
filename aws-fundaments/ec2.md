@@ -21,6 +21,7 @@
     - [Dedicated Hosts](#dedicated-hosts)
     - [Dedicated Instances](#dedicated-instances)
     - [Capacity Reservations](#capacity-reservations)
+  - [EC2 Auto Scaling](#ec2-auto-scaling)
   - [Which purchasing option is right for me?](#which-purchasing-option-is-right-for-me)
   - [Price Comparison Example - m4.large - us-east-1](#price-comparison-example---m4large---us-east-1)
   - [Shared Responsibility Model for EC2](#shared-responsibility-model-for-ec2)
@@ -152,7 +153,7 @@
 
 ## EC2 Instance Launch Types
 
-- ###[**On Demand Instances**](#on-demand-instance): short workload, predictable pricing
+- [**On Demand Instances**](#on-demand-instance): short workload, predictable pricing
 - [**Reserved**](#reserved-instances): (1 & 3 years)
   - **Reserved Instances**: long workloads
   - **Convertible Reserved Instances**: long workloads with flexible instances
@@ -236,6 +237,14 @@
 - You’re charged at On-Demand rate whether you run instances or not
 - Suitable for short-term, uninterrupted workloads that needs to be in a specific AZ
 
+## EC2 Auto Scaling
+- [**Auto Scaling Policies**](#on-demand-instance)
+- [**Tipos**](#on-demand-instance): short workload, predictable pricing
+  - [**Manual Scaling**](#reserved-instances): (1 & 3 years)
+  - [**Dynamic Scaling**](#savings-plans) (1 & 3 years): commitment to an
+  - [**Predictive Scaling**](#savings-plans) (1 & 3 years): commitment to 
+  - [**Scheduled Scaling**](#savings-plans) (1 & 3 years): commitment to
+    
 ## Which purchasing option is right for me?
 
 - On demand: coming and staying in resort whenever we like, we pay the full price
