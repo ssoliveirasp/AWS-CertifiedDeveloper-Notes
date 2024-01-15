@@ -72,11 +72,11 @@
   - Accelerated Computing
 
 - AWS has the following naming convention: m5.2xlarge
-- m: instance class
-- 5: generation (AWS improves them over time)
-- 2xlarge: size within the instance class
+  - m: instance class
+  - 5: generation (AWS improves them over time)
+  - 2xlarge: size within the instance class
 
-#### General Purpose
+#### General Purpose (M)
 
 - Great for a diversity of workloads such as web servers or code repositories
 - Balance between:
@@ -84,7 +84,7 @@
   - Memory
   - Networking
 
-#### Compute Optimized
+#### Compute Optimized (C)
 
 - Great for compute-intensive tasks that require high performance processors:
   - Batch processing workloads
@@ -94,7 +94,7 @@
   - Scientific modeling & machine learning
   - Dedicated gaming servers
 
-#### Memory Optimized
+#### Memory Optimized (R)
 
 - Fast performance for workloads that process large data sets in memory
 - Use cases:
@@ -103,7 +103,7 @@
   - In-memory databases optimized for BI (business intelligence)
   - Applications performing real-time processing of big unstructured data
 
-#### Storage Optimized
+#### Storage Optimized (I)
 
 - Great for storage-intensive tasks that require high, sequential read and write access to large data sets on local storage
 - Use cases:
