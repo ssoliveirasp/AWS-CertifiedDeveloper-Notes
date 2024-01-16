@@ -72,10 +72,13 @@
   - [Storage Optimized](#storage-optimized)
   - Accelerated Computing
 
-- AWS has the following naming convention: m5.2xlarge
-  - m: instance class
-  - 5: generation (AWS improves them over time)
-  - 2xlarge: size within the instance class
+- AWS has the following (naming convention(<https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html>) c7gn.xlarge.
+  - c: Instance family
+  - 7: Instance generation
+  - g: Processor family
+  - n: Additional capability
+  - 5: Generation (AWS improves them over time)
+  - xlarge: Instance size 
 
 #### General Purpose
 
