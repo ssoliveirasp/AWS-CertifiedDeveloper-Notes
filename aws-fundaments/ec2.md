@@ -75,12 +75,11 @@
 - Convenção de nomes para Instancias EC2
   (<https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html>)
     - c7gn.xlarge.
-        - c: Instance family
-        - 7: Instance generation
-        - g: Processor family
-        - n: Additional capability
-        - 5: Generation (AWS improves them over time)
-        - xlarge: Instance size 
+        - c: Familia Instancia
+        - 7: Geração da Instancia 
+        - g: Familia do Processador
+        - n: Capacidade Adicional
+        - xlarge: Tamanho da Instancia
 
 #### General Purpose
 
