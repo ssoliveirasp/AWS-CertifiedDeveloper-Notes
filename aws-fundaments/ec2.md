@@ -72,7 +72,8 @@
   - [Storage Optimized](#storage-optimized)
   - Accelerated Computing
 
-- Convenção de nomes para Instancias EC2  (naming convention(<https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html>)
+- Convenção de nomes para Instancias EC2
+  (<https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html>)
     - c7gn.xlarge.
         - c: Instance family
         - 7: Instance generation
