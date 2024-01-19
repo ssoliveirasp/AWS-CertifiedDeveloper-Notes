@@ -243,12 +243,17 @@
 
 ## EC2 Auto Scaling
 - [**Auto Scaling Policies**](#on-demand-instance)
-- [**Tipos**](#on-demand-instance): short workload, predictable pricing
-  - [**Manual Scaling**](#reserved-instances): 
+- [**Tipos**](#on-demand-instance): 
+  - [**Manual Scaling**](#reserved-instances)
+  -   Ideal para eventos planejados, mais não é uma solução de longo prazo. 
   - [**Dynamic Scaling**](#savings-plans):
+    - Step Scaling: realizada escalonamento baseado em métricas geradas pelo CloudWatch Alarms (Ex: CPU > 60%)
+    - Target Tracking:      
   - [**Predictive Scaling**](#savings-plans):
   - [**Scheduled Scaling**](#savings-plans):
-    
+
+ - Cooldown policy: Periodo de tempo que auto scaling group aguarda para adicionar ou remover instancias.
+       
 ## Which purchasing option is right for me?
 
 - On demand: coming and staying in resort whenever we like, we pay the full price
