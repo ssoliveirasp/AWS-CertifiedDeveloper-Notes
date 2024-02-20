@@ -17,25 +17,41 @@
 
 ## DynamoDB
 
-- Gerenciado pela AWS com réplicas em 3 AZ's garantindo alta disponibilidade.
-- Escalonável para quantidade muito grande de dados pois é um banco de dados distribuído.
-- Milhões de requisições por segundo, trilhões de linhas, centenas de terabytes de armazenamento.
-- Rápido e consistente em performance (baixa latência).
-- Integrado com IAM para segurança, autorização e administração.
-- Event Driven Programming com DynamoDB Streams.
+### Caracteristicas
 - Baixo custo.
-- Escalonamento automático.
 - DynamoDB é feito de tabelas.
 - Primary Key é obrigatório e deve ser definido no momento em que criamos a tabela.
+
+### Escalonamento
+- Escalonamento automático.
+- Escalonável para quantidade muito grande de dados pois é um banco de dados distribuído.
+
+### Limitações
+- Tamanho máximo do item é de 400KB.
+
+### Performance
+- Gerenciado pela AWS com réplicas em 3 AZ's garantindo alta disponibilidade.
+- Milhões de requisições por segundo, trilhões de linhas, centenas de terabytes de armazenamento.
+- Rápido e consistente em performance (baixa latência).
+
+### Seguranca
+- Integrado com IAM para segurança, autorização e administração.
+
+### Streams
+- Event Driven Programming com DynamoDB Streams.
+
+## DynamoDB - Modelagem de Dados
+
+#### Caracteristicas
 - Uma tabela pode ter infinitos itens (equivalente a rows nos bancos relacionais).
 - Cada item tem Attributes, podendo ser adicionados a qualquer momento ou ser nulo.
-- Tamanho máximo do item é de 400KB.
-- Tipos de dados suportados:
+
+#### Tipos de dados suportados:
   - Scalar types: String, Number, Binary, Boolean, null.
   - Document type: List, Map.
   - Set types: String set, Number set, Binary set.
 
-## DynamoDB - Primary Key
+#### DynamoDB - Primary Key
 
 - Opção 1: Somente Partition Key (hash):
   - Partition Key deve ser única para cada item.
