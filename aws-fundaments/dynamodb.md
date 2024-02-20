@@ -42,16 +42,16 @@
 
 ## DynamoDB - Modelagem de Dados
 
-#### Caracteristicas
+### Caracteristicas
 - Uma tabela pode ter infinitos itens (equivalente a rows nos bancos relacionais).
 - Cada item tem Attributes, podendo ser adicionados a qualquer momento ou ser nulo.
 
-#### Tipos de dados suportados:
+### Tipos de dados suportados:
   - Scalar types: String, Number, Binary, Boolean, null.
   - Document type: List, Map.
   - Set types: String set, Number set, Binary set.
 
-#### DynamoDB - Primary Key
+### DynamoDB - Primary Key
 
 - Opção 1: Somente Partition Key (hash):
   - Partition Key deve ser única para cada item.
@@ -61,7 +61,7 @@
   - Dados são agrupados pela Partition Key.
   - Sort Key == Range Key.
 
-## DynamoDB - Provisioned Throughput
+### DynamoDB - Provisioned Throughput
 
 - Tabela deve ter leitura e escrita provisionadas.
 - Read Capacity Units (RCU).
@@ -71,7 +71,7 @@
 - Se o burst credit acabar, você receberá um **ProvisionedThroughputException**.
 - É recomendado fazer um Exponential Back-Off Retry.
 
-## DynamoDB - Write Capacity Units (WCU)
+### DynamoDB - Write Capacity Units (WCU)
 
 - 1 Write Capacity Unit (WCU) representa uma escrita por segundo para 1 item até 1KB em tamanho.
 - Se o item for maior que 1KB, mais WCU será consumido.
@@ -80,7 +80,7 @@
   - Escrever 6 itens de 4.5KB por segundo = 30 WCU (6 \* 5 = 30).
   - Escrever 120 itens de 2KB por minuto = 4 WCU ((2 \* 120) / 60 = 4).
 
-## DynamoDB - Read Capacity Units (RCU)
+### DynamoDB - Read Capacity Units (RCU)
 
 - 1 Read Capacity Unit (RCU) representa 1 Strongly Consistent Read por segundo ou 2 Eventually Consistent Reads por segundo para um item até 4KB.
 - Se o item for maior que 4KB, mais RCU serão consumidos.
@@ -89,13 +89,13 @@
   - 16 Eventually Consistent Read por segundo de 12KB = 24 RCU ((16/2) \* (12/4) = 24).
   - 10 Strongly Consistent Read por segundo de 6KB = 20 RCU ((10 \* 8)/4 = 20).
 
-## DynamoDB - Strongly Consistent Read VS Eventually Consistent Read
+### DynamoDB - Strongly Consistent Read VS Eventually Consistent Read
 
 - Eventually Consistent Read: Se lermos um item logo após uma escrita, podemos receber seu valor anterior devido a replicação do dado.
 - Strongly Consistence Read: Se lermos um item depois de uma escrita, leremos o valor atualizado.
 - Por padrão o DynamoDB usa Eventually Consistence Reads, porém os métodos GetItem, Query e Scan possuem um parâmetro chamado ConsistentRead que pode ser modificado para True.
 
-## DynamoDB - Partitions Internal
+### DynamoDB - Partitions Internal
 
 - Dados são divididos em partitions.
 - Partition Key passa por um algoritmo para saber para qual Partition deve ir.
@@ -105,7 +105,7 @@
   - Número de partições: CEILING(MAX(Capacity, Size)).
 - WCU e RCU são distribuídos igualmente entre as partições.
 
-## DynamoDB - Throttling
+### DynamoDB - Throttling
 
 - Se excedemos RCU ou WCU recebemos um ProvisionedThroughputExceededException.
 - Possíveis razões:
