@@ -225,13 +225,24 @@
 ## DynamoDB - Streams
 
 - Mudanças no DynamoDB (Create, Update, Delete) podem iniciar um DynamoDB Stream.
-- Esse Stream pode ser lido pela AWS Lambda para:
+
+### Integracoes 
+    
+  #### Lambda
+  - Até 2 lambdas inscritos em um unico stream.
+  - Esse Stream pode ser lido pela AWS Lambda para:
   - Reagir a mudanças em tempo real, como por exemplo enviar um e-mail de boas vindas.
-  - Análise.
-  - Criar derivative tables / views.
-  - Insert no ElasticSearch.
-- Possível implementar Cross Region Replication usando Streams.
-- Stream tem 24 horas de retenção.
+       - Análise.
+       - Criar derivative tables / views.
+       - Insert no ElasticSearch.
+  - Possível implementar Cross Region Replication usando Streams.
+  - Stream tem 24 horas de retenção.
+
+  #### Kinesis Data Streams
+  - Perda de Ordenação.
+    - possivel reordenar utilizando o atributo "ApproximateCreationDateTime"
+
+   https://www.youtube.com/watch?v=kOWotp042PI
 
 ## DynamoDB - Segurança e outros recursos
 
