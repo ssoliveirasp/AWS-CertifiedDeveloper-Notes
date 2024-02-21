@@ -53,10 +53,11 @@
 
 ### DynamoDB - Primary Key
 
-- Opção 1: Somente Partition Key (hash):
+- Somente Partition Key (hash):
   - Partition Key deve ser única para cada item.
   - Partition Key deve ser diversificada para os dados serem distribuídos.
-- Opção 2: Partition Key + Sort Key:
+
+- Partition Key + Sort Key:
   - A combinação deve ser única.
   - Dados são agrupados pela Partition Key.
   - Sort Key == Range Key.
@@ -105,30 +106,33 @@
   - Número de partições: CEILING(MAX(Capacity, Size)).
 - WCU e RCU são distribuídos igualmente entre as partições.
 
-### DynamoDB - Throttling
+## DynamoDB - Throttling
 
 - Se excedemos RCU ou WCU recebemos um ProvisionedThroughputExceededException.
-- Possíveis razões:
-  - Hot Key: Um Partition Key está sendo acessado muitas vezes.
-  - Hot Partition.
-  - Itens muito grandes: Pois RCU e WCU dependem do tamanho do item.
-- Soluções possíveis:
-  - Exponential Back-Off quando uma exceção é encontrada (recurso incluso no SDK).
-  - Distribuir Partition Keys o máximo possível.
-  - Se for problema com RCU, podemos usar o DynamoDB Accelerator (DAX).
+  - Possíveis razões:
+    - Hot Key: Um Partition Key está sendo acessado muitas vezes.
+    - Hot Partition.
+    - Itens muito grandes: Pois RCU e WCU dependem do tamanho do item.
+  - Soluções possíveis:
+    - Exponential Back-Off quando uma exceção é encontrada (recurso incluso no SDK).
+    - Distribuir Partition Keys o máximo possível.
+    - Se for problema com RCU, podemos usar o DynamoDB Accelerator (DAX).
 
 ## DynamoDB - Escrevendo dados
 
 - PutItem:
   - Escreve dados no DynamoDB, criando ou substituindo.
   - Consome WCU.
+    
 - UpdateItem:
   - Atualiza dados no DynamoDB, atualizando parte dos atributos.
   - Possibilidade de usar Atomic Counters e incrementá-los.
-- Conditional Writes:
+    
+- [Conditional Writes](https://docs.aws.amazon.com/pt_br/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate):
   - Escreve ou atualiza somente se a condição for satisfeita.
-  - Ajuda com acesso simultâneo aos itens.
-  - Sem impacto na performance.
+  - Contribuindo com acesso simultâneo aos itens.
+  - Não impacta a performance.
+  - A expressão inteira deve ser avaliada como verdadeira. Caso contrário, haverá falha na operação.
 
 ## DynamoDB - Apagando dados
 
