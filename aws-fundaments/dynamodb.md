@@ -129,10 +129,10 @@
   - Possibilidade de usar Atomic Counters e incrementá-los.
     
 - [Conditional Writes](https://docs.aws.amazon.com/pt_br/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate):
-  - Escreve ou atualiza somente se a condição for satisfeita.
-  - Contribuindo com acesso simultâneo aos itens.
+  - A expressão inteira deve ser avaliada como verdadeira para realizar atualização. Caso contrário, haverá falha na operação.
+  - Utilizando AWS CLI update-item utiliza o parametro 'update-expression'.
+  - Pode ser utilizado para contribuir com acesso simultâneo aos itens.
   - Não impacta a performance.
-  - A expressão inteira deve ser avaliada como verdadeira. Caso contrário, haverá falha na operação.
 
 ## DynamoDB - Apagando dados
 
