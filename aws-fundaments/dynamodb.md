@@ -106,6 +106,10 @@
   - Número de partições: CEILING(MAX(Capacity, Size)).
 - WCU e RCU são distribuídos igualmente entre as partições.
 
+### DynamoDB - Modelagem de Dados - Referencias
+[Exemplo Modelagem AWS](https://docs.aws.amazon.com/pt_br/amazondynamodb/latest/developerguide/bp-modeling-nosql-B.html)
+
+
 ## DynamoDB - Throttling
 
 - Se excedemos RCU ou WCU recebemos um ProvisionedThroughputExceededException.
