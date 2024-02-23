@@ -1,7 +1,7 @@
 - [DynamoDB (NoSql)](#dynamodb-nosql)
   - [NoSQL (Not Only SQL)](#nosql-not-only-sql)
   - [DynamoDB](#dynamodb)
-  - [DynamoDB - Modelagem de Dados](dynamodb-modelagem-de-dados)
+  - [DynamoDB - Modelagem de Dados](#dynamodb---modelagem-de-dados)
     
 # DynamoDB (NoSql)
 
