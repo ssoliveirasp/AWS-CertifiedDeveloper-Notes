@@ -51,12 +51,17 @@
 - Gerenciado pela AWS com réplicas em 3 AZ's garantindo alta disponibilidade.
 - Milhões de requisições por segundo, trilhões de linhas, centenas de terabytes de armazenamento.
 - Rápido e consistente em performance (baixa latência).
+- Global Tables:
+  - Multi Region, replicável e alta performance.
 
 ### Seguranca
 - Integrado com IAM para segurança, autorização e administração.
 
 ### Streams
 - Event Driven Programming com DynamoDB Streams.
+
+### Desenvolvimento
+- É possível instalar DynamoDB em uma máquina local para desenvolvimento.
 
 ## DynamoDB - Modelagem de Dados
 
@@ -270,17 +275,17 @@
 
    https://www.youtube.com/watch?v=kOWotp042PI
 
-## DynamoDB - Segurança e outros recursos
+## DynamoDB - Segurança
 
 - Segurança:
   - VPC Endpoint disponível para acessar o DynamoDB sem internet.
   - Acesso totalmente controlado pelo IAM.
   - Criptografia em repouso usando KMS.
   - Criptografia em transito usando SSL/TLS.
-- Backup e Restore:
+
+## DynamoDB - Backup e Restore
   - Restauração Point in time, igual ao RDS.
   - Sem impacto na performance.
-- Global Tables:
-  - Multi Region, replicável e alta performance.
+
+## DynamoDB - Migracao
 - Amazon DMS pode ser usado para migrar para DynamoDB dados do: Mongo, Oracle, MySQL, S3, etc.
-- É possível instalar DynamoDB em uma máquina local para desenvolvimento.
