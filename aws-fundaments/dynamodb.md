@@ -5,16 +5,16 @@
   - [DynamoDB - Throttling](#dynamodb---throttling)
   - [DynamoDB - Escrevendo dados](#dynamodb---escrevendo-dados)
   - [DynamoDB - Apagando dados](#dynamodb---apagando-dados)
-  - DynamoDB - Batching writes
-  - DynamoDB - Lendo dados
-  - DynamoDB - Query
-  - DynamoDB - Scan
-  - DynamoDB - Local Secondary Index (LSI)
-  - DynamoDB - Global Secondary Index (GSI)
-  - DynamoDB - Concurrency
-  - DynamoDB - DAX (DynamoDB Accelerator)
-  - DynamoDB - Streams
-  - DynamoDB - Segurança e outros recursos
+  - [DynamoDB - Batching writes](#dynamodb---batching-writes)
+  - [DynamoDB - Lendo dados](#dynamodb---lendo-dados)
+  - [DynamoDB - Query](#dynamodb---query)
+  - [DynamoDB - Scan](#dynamodb---scan)
+  - [DynamoDB - Local Secondary Index (LSI)](#dynamodb---local-secondary-index-lsi)
+  - [DynamoDB - Global Secondary Index (GSI)](#dynamodb---global-secondary-index-gsi)
+  - [DynamoDB - Concurrency](#dynamodb---concurrency)
+  - [DynamoDB - DAX (DynamoDB Accelerator)](#dynamodb---dax-dynamodb-accelerator)
+  - [DynamoDB - Streams](#dynamodb---streams)
+  - [DynamoDB - Segurança e outros recursos](#dynamodb---segurança-e-outros-recursos)
     
 # DynamoDB (NoSql)
 
