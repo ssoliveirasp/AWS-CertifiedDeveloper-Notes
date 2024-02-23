@@ -14,7 +14,9 @@
   - [Concurrency](#dynamodb---concurrency)
   - [DAX (DynamoDB Accelerator)](#dynamodb---dax-dynamodb-accelerator)
   - [Streams](#dynamodb---streams)
-  - [Segurança e outros recursos](#dynamodb---segurança-e-outros-recursos)
+  - [Segurança](#dynamodb---segurança)
+  - [Backup e Restore](#dynamodb---backup-e-restore)
+  - [Migracao](#dynamodb---migracao)
     
 # DynamoDB (NoSql)
 
