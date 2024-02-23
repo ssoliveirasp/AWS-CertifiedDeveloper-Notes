@@ -2,6 +2,9 @@
   - [NoSQL (Not Only SQL)](#nosql-not-only-sql)
   - [DynamoDB](#dynamodb)
   - [DynamoDB - Modelagem de Dados](#dynamodb---modelagem-de-dados)
+  - [DynamoDB - Throttling](#dynamodb---throttling)
+  - [DynamoDB - Escrevendo dados](#dynamodb---escrevendo-dados)
+  - [DynamoDB - Apagando dados](#dynamodb---apagando-dados)
     
 # DynamoDB (NoSql)
 
