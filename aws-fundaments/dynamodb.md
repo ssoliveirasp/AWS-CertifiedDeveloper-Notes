@@ -279,11 +279,16 @@
 
 ## DynamoDB - Segurança
 
-- Segurança:
+### Caracteristicas:
   - VPC Endpoint disponível para acessar o DynamoDB sem internet.
   - Acesso totalmente controlado pelo IAM.
   - Criptografia em repouso usando KMS.
   - Criptografia em transito usando SSL/TLS.
+
+###  Table Access Provisioning (Policies)
+A AWS aborda alguns casos de uso comuns fornecendo políticas autônomas do IAM que são criadas e administradas pela AWS. Essas políticas gerenciadas pela AWS concedem as permissões necessárias
+
+
 
 ## DynamoDB - Backup e Restore
   - Restauração Point in time, igual ao RDS.
