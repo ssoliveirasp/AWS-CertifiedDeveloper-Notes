@@ -299,7 +299,26 @@
    - dynamodb:BatchWriteItem
    - dynamodb:DeleteItem  
    - dynamodb:FullAccess
-  
+
+#### Criar Politicas Personalizadas
+- Effect
+  - Allow
+  - Deny
+
+- Resource        
+  - "arn:table/{nome tabela}"
+  - "arn:table/{nome tabela}/index/*"
+
+- Condition
+  -   Chave de Condição
+      - dynamodb:LeadingKeys (Chaves Principais)
+         - Utilizar modificador "ForAllValues".
+      - dynamodb:Select      (Query ou Scan)
+        - ALL_ATTRIBUTES
+        - ALL_PROJECTED_ATTRIBUTES
+        - SPECIFIC_ATTRIBUTES
+        - COUNT
+
 ## DynamoDB - Backup e Restore
   - Restauração Point in time, igual ao RDS.
   - Sem impacto na performance.
