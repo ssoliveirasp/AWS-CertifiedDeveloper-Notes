@@ -290,11 +290,14 @@
 
 #### Aws Politicas (Actions - "Pré-Definidas")
    - dynamodb:GetItem
+   - dynamodb:BatchGetItem
    - dynamodb:Query
    - dynamodb.Scan
-   - dynamodb:PutItem
-   - dynamodb:BatchWriteIten   
    - dynamodb:ReadOnlyAccess
+   - dynamodb:PutItem
+   - dynamodb:UpdateItem
+   - dynamodb:BatchWriteItem
+   - dynamodb:DeleteItem  
    - dynamodb:FullAccess
   
 ## DynamoDB - Backup e Restore
