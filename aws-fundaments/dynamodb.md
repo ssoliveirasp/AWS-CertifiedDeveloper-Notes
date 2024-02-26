@@ -286,10 +286,17 @@
   - Criptografia em transito usando SSL/TLS.
 
 ###  Table Access Provisioning (Policies)
-A AWS aborda alguns casos de uso comuns fornecendo políticas autônomas do IAM que são criadas e administradas pela AWS. Essas políticas gerenciadas pela AWS concedem as permissões necessárias
+  A AWS aborda alguns casos de uso comuns fornecendo políticas autônomas do IAM que são criadas e administradas pela AWS. Essas políticas gerenciadas pela AWS concedem as permissões necessárias
 
-
-
+#### Aws Politicas (Actions - "Pré-Definidas")
+   - dynamodb:GetItem
+   - dynamodb:Query
+   - dynamodb.Scan
+   - dynamodb:PutItem
+   - dynamodb:BatchWriteIten   
+   - dynamodb:ReadOnlyAccess
+   - dynamodb:FullAccess
+  
 ## DynamoDB - Backup e Restore
   - Restauração Point in time, igual ao RDS.
   - Sem impacto na performance.
