@@ -58,6 +58,11 @@
 
 ### Seguranca
 - Integrado com IAM para segurança, autorização e administração.
+  
+#### Encryption at rest
+- Owned by Amazon DybamoDB
+- AWS managed key
+- Stored in your account and owned and managed by you.
 
 ### Streams
 - Event Driven Programming com DynamoDB Streams.
