@@ -62,6 +62,13 @@
 ### Streams
 - Event Driven Programming com DynamoDB Streams.
 
+### Table Classes
+- Standard Access Table Class
+  - Usado com mais frequencia.
+    
+- Standard-Infrequent Access Table Class
+  - Acesso infrequente e preço mais barato.
+
 ### Desenvolvimento
 - É possível instalar DynamoDB em uma máquina local para desenvolvimento.
 
