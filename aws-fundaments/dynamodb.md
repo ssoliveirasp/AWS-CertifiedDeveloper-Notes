@@ -311,6 +311,7 @@
 
 - Condition
   - Chave de Condição
+    
       - dynamodb:LeadingKeys (Chaves Principais)
          - Utilizar modificador "ForAllValues".
          
