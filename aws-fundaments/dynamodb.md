@@ -223,9 +223,9 @@
 
 - Deve ser definido no momento da criação da tabela.
 - Key alternativo para tabela, local ao hash key.
-- Máximo de 5 LSI por tabela.
 - Sort Key consiste de exatamente um atributo.
 - O atributo que você escolher deve ser String, Number ou Binary.
+- Máximo de 5 LSI por tabela.
 
 ## DynamoDB - Global Secondary Index (GSI)
 
@@ -237,7 +237,8 @@
   - Pode-se usar todos os atributos da tabela principal (ALL).
 - Deve-se definir RCU/WCU para o índice.
 - Possibilidade de adicionar/modificar GSI.
-
+- Maximo de 20 GSI por tabela.
+  
 ## DynamoDB - Concurrency
 
 - DynamoDB tem uma função chamada **Conditional Update/Delete**.
