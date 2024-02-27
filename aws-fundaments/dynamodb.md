@@ -310,13 +310,15 @@
   - "arn:table/{nome tabela}/index/*"
 
 - Condition
-  -   Chave de Condição
+  - Chave de Condição
       - dynamodb:LeadingKeys (Chaves Principais)
          - Utilizar modificador "ForAllValues".
+         
       - dynamodb:Select      (Query ou Scan)
         - ALL_ATTRIBUTES
         - ALL_PROJECTED_ATTRIBUTES
         - SPECIFIC_ATTRIBUTES
+           - dynamodb.Attributes   
         - COUNT
 
 ## DynamoDB - Backup e Restore
