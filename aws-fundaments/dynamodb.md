@@ -63,10 +63,10 @@
 - Event Driven Programming com DynamoDB Streams.
 
 ### Table Classes
-- Standard Access Table Class
+- DynamoDB Standard
   - Usado com mais frequencia.
     
-- Standard-Infrequent Access Table Class
+- DynamoDB Standard-IA
   - Acesso infrequente e preço mais barato.
 
 ### Desenvolvimento
