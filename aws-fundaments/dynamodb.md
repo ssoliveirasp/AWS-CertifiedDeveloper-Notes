@@ -221,15 +221,15 @@
 
 ## DynamoDB - Local Secondary Index (LSI)
 
+- Deve ser definido no momento da criação da tabela.
 - Key alternativo para tabela, local ao hash key.
-- Máximo de 5 Local Secondary Indexes por tabela.
+- Máximo de 5 LSI por tabela.
 - Sort Key consiste de exatamente um atributo.
 - O atributo que você escolher deve ser String, Number ou Binary.
-- LSI deve ser definido no momento da criação da tabela.
 
 ## DynamoDB - Global Secondary Index (GSI)
 
-- Para aumentar a velocidade dos Queries para atributos que não são keys, use Global Secondary Index.
+- Para aumentar a velocidade dos Queries para atributos que não são keys, use GSI.
 - GSI = Partition Key + Sort Key (opcional).
 - Index é uma "nova" tabela e podemos projetar atributos a ela:
   - A Partition Key e Sort Key da tabela original são sempre projetada (KEYS_ONLY).
