@@ -148,6 +148,13 @@
   - Tamanho: Tamanho total / 10GB.
   - Número de partições: CEILING(MAX(Capacity, Size)).
 - WCU e RCU são distribuídos igualmente entre as partições.
+  - Balanceamento
+    - Capacidade (400 RCUs | 400 WCUs) em um exemplo de 4 partiçoes cada partição teria um limite flexivel (100 RCUS | 400 WCUS).
+  - Hot Partition (Partição Ativa)
+    - Ocorre quando uma partição excede o seu limite flexivel (RCU | WCU).
+    - Leitura e gravações param de funcionar nesta partição.
+  - ProvisionedThroughputExceeded
+    - Erro de limitações ou gargalos durante uma Hot Partition.     
 
 ### DynamoDB - Modelagem de Dados - Referencias
 [Exemplo Modelagem AWS](https://docs.aws.amazon.com/pt_br/amazondynamodb/latest/developerguide/bp-modeling-nosql-B.html)
