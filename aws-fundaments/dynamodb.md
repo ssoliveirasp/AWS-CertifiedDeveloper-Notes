@@ -158,7 +158,7 @@
     - AWS SDK repetirá automaticamente varias vezes com espera exponencial integrada [exponential backoff]  (1x, 2x, 4x, 8x, ...x).
   - _Manage imbalances DynamoDB_
     - Burst capacity
-      - Aws oferece a partição com 'Hot Partition' capacidade extra e um 'periodo curto de tempo'.
+      - Aws oferece a partição com 'Hot Partition' capacidade extra grátis e um 'periodo curto de tempo'.
     - Adaptive Capacity
       - Permite a partição com 'Hot Partition' consumir mais capacidade (thtoughput) indefitivamente. 
  
