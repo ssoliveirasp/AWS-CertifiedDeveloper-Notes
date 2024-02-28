@@ -88,7 +88,7 @@
   - Document type: List, Map.
   - Set types: String set, Number set, Binary set.
 
-### DynamoDB - Primary Key
+### DynamoDB - Partition Key
 
 - Somente Partition Key (hash):
   - Partition Key deve ser única para cada item.
@@ -136,6 +136,12 @@
 ### DynamoDB - Partitions Internal
 
 - Dados são divididos em partitions.
+  - A regra para divisão:
+    - Partition DataSize
+       -  Tamanho total particicao > 10gb
+    - RCU and WCU Partition
+      - Partition RCU > 3000.
+      - Partition WCU > 1000.
 - Partition Key passa por um algoritmo para saber para qual Partition deve ir.
 - Para computar o número de partições:
   - Capacidade: (Total RCU / 3000) + (Total de WCU / 1000).
