@@ -135,7 +135,7 @@
 
 ### DynamoDB - Partitions Internal
 
-- Dados são divididos em partitions.
+- _Dados são divididos em partitions_.
   - A regra para divisão:
     - Partition DataSize
        -  Tamanho total particicao > 10gb
@@ -143,20 +143,25 @@
       - Partition RCU > 3000.
       - Partition WCU > 1000.
 - Partition Key passa por um algoritmo para saber para qual Partition deve ir.
-- Para computar o número de partições:
+- Computar o número de partições:
   - Capacidade: (Total RCU / 3000) + (Total de WCU / 1000).
   - Tamanho: Tamanho total / 10GB.
   - Número de partições: CEILING(MAX(Capacity, Size)).
 - WCU e RCU são distribuídos igualmente entre as partições.
-  - Balanceamento
+  - _Balanceamento_
     - Capacidade (400 RCUs | 400 WCUs) em um exemplo de 4 partiçoes cada partição teria um limite flexivel (100 RCUS | 400 WCUS).
-  - Hot Partition (Partição Ativa)
+  - _Hot Partition (Partição Ativa)_
     - Ocorre quando uma partição excede o seu limite flexivel (RCU | WCU).
     - Leitura e gravações param de funcionar nesta partição.
-  - ProvisionedThroughputExceededException
+  - _ProvisionedThroughputExceededException_
     - Erro de limitações ou gargalos durante uma Hot Partition.
     - AWS SDK repetirá automaticamente varias vezes com espera exponencial integrada [exponential backoff]  (1x, 2x, 4x, 8x, ...x).
-
+  - _Manage imbalances DynamoDB_
+    - Burst capacity
+      - Aws oferece a partição com 'Hot Partition' capacidade extra e um 'periodo curto de tempo'.
+    - Adaptive Capacity
+      - Permite a partição com 'Hot Partition' consumir mais capacidade (thtoughput) indefitivamente. 
+ 
 ### DynamoDB - Modelagem de Dados - Referencias
 [Exemplo Modelagem AWS](https://docs.aws.amazon.com/pt_br/amazondynamodb/latest/developerguide/bp-modeling-nosql-B.html)
 
