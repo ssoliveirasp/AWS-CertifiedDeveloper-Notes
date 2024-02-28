@@ -153,8 +153,9 @@
   - Hot Partition (Partição Ativa)
     - Ocorre quando uma partição excede o seu limite flexivel (RCU | WCU).
     - Leitura e gravações param de funcionar nesta partição.
-  - ProvisionedThroughputExceeded
-    - Erro de limitações ou gargalos durante uma Hot Partition.     
+  - ProvisionedThroughputExceededException
+    - Erro de limitações ou gargalos durante uma Hot Partition.
+    - AWS SDK repetirá automaticamente varias vezes com espera exponencial integrada [exponential backoff]  (1x, 2x, 4x, 8x, ...x).
 
 ### DynamoDB - Modelagem de Dados - Referencias
 [Exemplo Modelagem AWS](https://docs.aws.amazon.com/pt_br/amazondynamodb/latest/developerguide/bp-modeling-nosql-B.html)
