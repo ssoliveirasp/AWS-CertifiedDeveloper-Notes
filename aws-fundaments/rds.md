@@ -31,14 +31,13 @@
 - Aplicações devem atualizar string de conexão para usar Read Replica.
 
 ## RDS - Read réplica em Multi Availability Zone
-
-- Réplica é síncrona (sync).
-- Usam um único DNS name.
-- Automaticamente direciona os acessos para o banco **Stand-by** quando há o failover.
-- Aumenta a disponibilidade.
-- Failover em caso de perda de AZ e rede.
-- Sem necessidade de intervenção.
-- Não é usado para escalonamento.
+    - Réplica é síncrona (sync).
+    - Usam um único DNS name.
+    - Automaticamente direciona os acessos para o banco **Stand-by** quando há o failover.
+    - Aumenta a disponibilidade.
+    - Failover em caso de perda de AZ e rede.
+    - Sem necessidade de intervenção.
+    - Não é usado para escalonamento.
 
 ## RDS - StorageScaling
 
@@ -53,17 +52,20 @@
      - Custo efetivo
      - Limites dados primarios
         - Minimo de 20 GiB
-        - Maximo de 64 Gib (Sql Server 16 GiB)
+        - Maximo de 64 TiB (Sql Server 16 TiB)
 
    ##### Provisioned IOPS (SSD) Storage
      - Bom para cargas de trabalho (workloads) com alto (I/O)
      - IOPS
        - Minimo 8.000
        - Maximo 80.000 (SQL Server 40.000)   
-    
+     - Storage Primary Data
+       - Minimo 100 GiB
+       - Maximo de 64 TiB (Sql Server 16 TiB)
+   
    - Shared Cluster Storage
      - Banco: Amazon Aurora  
-
+ 
 ## RDS - Backup
 
 - Backup é automático e:
