@@ -1,13 +1,14 @@
 # RDS - Relational Database Service
 
-- RDS é um serviço gerenciado pela AWS para banco de dados que utilizam SQL para queries.
-- Suporta os seguintes bancos de dados:
-  - PostgreSQL.
-  - Oracle.
-  - MySQL.
-  - MariaDB.
-  - Microsoft SQL Server.
-  - Aurora (banco de dados desenvolvido pela AWS).
+## Definição
+    RDS é um serviço gerenciado pela AWS para banco de dados que utilizam SQL para queries.
+## Suporta os seguintes bancos de dados:
+     - PostgreSQL.
+     - Oracle.
+     -  MySQL.
+     - MariaDB.
+     - Microsoft SQL Server.
+     - Aurora (banco de dados desenvolvido pela AWS).  
 
 ## Vantagens entre RDS vs EC2 + Banco de dados
 
