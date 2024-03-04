@@ -5,7 +5,7 @@
 ## Suporta os seguintes bancos de dados:
      - PostgreSQL.
      - Oracle.
-     -  MySQL.
+     - MySQL.
      - MariaDB.
      - Microsoft SQL Server.
      - Aurora (banco de dados desenvolvido pela AWS).  
