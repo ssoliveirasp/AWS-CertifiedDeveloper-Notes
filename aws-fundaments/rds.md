@@ -11,16 +11,15 @@
      - Aurora (banco de dados desenvolvido pela AWS).  
 
 ## Vantagens entre RDS vs EC2 + Banco de dados
-
-- RDS é gerenciado pela AWS.
-- Patching é responsabilidade pela AWS.
-- Backups contínuos. Banco de dados pode ser restaurado para um timestamp.
-- Painel de controle para monitoramento.
-- Read replicas para otimizar leituras.
-- Opção de configuração para Multi Availability Zone para recuperação após desastres.
-- Janela de manutenção para upgrades.
-- Escalonamento (vertical e horizontal).
-- Não é possível acesso via SSH no RDS.
+    - RDS é gerenciado pela AWS.
+    - Patching é responsabilidade pela AWS.
+    - Backups contínuos. Banco de dados pode ser restaurado para um timestamp.
+    - Painel de controle para monitoramento.
+    - Read replicas para otimizar leituras.
+    - Opção de configuração para Multi Availability Zone para recuperação após desastres.
+    - Janela de manutenção para upgrades.
+    - Escalonamento (vertical e horizontal).
+    - Não é possível acesso via SSH no RDS.
 
 ## RDS - Read réplica
 
