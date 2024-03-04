@@ -40,6 +40,30 @@
 - Sem necessidade de intervenção.
 - Não é usado para escalonamento.
 
+## RDS - StorageScaling
+
+  ### Elastic Block Storage (EBS)
+
+  #### Bancos 
+  - MySql, PostgreSQL, MariaDB, Oracle, SQL Server.
+
+  #### Tipos
+  ##### General Purpose SSD Storage
+     - Provem latencia em milisegundos de apenas um digito.
+     - Custo efetivo
+     - Limites dados primarios
+        - Minimo de 20 GiB
+        - Maximo de 64 Gib (Sql Server 16 GiB)
+
+   ##### Provisioned IOPS (SSD) Storage
+     - Bom para cargas de trabalho (workloads) com alto (I/O)
+     - IOPS
+       - Minimo 8.000
+       - Maximo 80.000 (SQL Server 40.000)   
+    
+   - Shared Cluster Storage
+     - Banco: Amazon Aurora  
+
 ## RDS - Backup
 
 - Backup é automático e:
