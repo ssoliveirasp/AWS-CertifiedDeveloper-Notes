@@ -58,15 +58,20 @@
    ##### Provisioned IOPS (SSD) Storage
      - Bom para cargas de trabalho (workloads) com alto (I/O)
      - IOPS
-       - Minimo 8.000
-       - Maximo 80.000 (SQL Server 40.000)   
+       - Minimo 8.000.
+       - Maximo 80.000 (SQL Server 40.000).
      - Storage Primary Data
-       - Minimo 100 GiB
-       - Maximo de 64 TiB (Sql Server 16 TiB)
+       - Minimo 100 GiB.
+       - Maximo de 64 TiB (Sql Server 16 TiB).
    
    #### Shared Cluster Storage
-       - Banco: Amazon Aurora  
- 
+       - Banco: Amazon Aurora.
+
+   #### Storage AutoScaling
+       - Feature quando habilitada permite aumentar capacidade até seu limite GiB configurado  (Maximum storage threshold). 
+         - Minimo: 101 Gib
+         - Maximo: 65536 GiB (Aprox. 70 TB)
+
 ## RDS - Backup
 
     - Backup é automático e:
