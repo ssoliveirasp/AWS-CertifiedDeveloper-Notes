@@ -56,7 +56,7 @@
 #### Multi-AZ DB Cluster
 
     - Cria um `Cluster` com um `Primary Instance` e duas `Instancias Standby` em `diferentes AZ`.
-    - Suporta conexão de leitura com as `Instancias Standby`.
+    - Suporta conexão de leitura com as `Instancias Standby` atraves do endpoint do tipo `Reader Instance`.
     - Provem `Alta Disponibilidade`.
     
 ## RDS - StorageScaling
