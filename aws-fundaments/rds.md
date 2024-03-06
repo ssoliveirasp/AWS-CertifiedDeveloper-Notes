@@ -39,6 +39,26 @@
     - Sem necessidade de intervenção.
     - Não é usado para escalonamento.
 
+## RDS - Availability and Durability
+
+### Deployment Options
+
+#### Single DB Instance
+
+    - Cria uma `instancia unica` sem instancias de standby.
+
+#### Multi-AZ DB instance
+
+    - Cria uma `Primary Instance` e uma `Standby Instance` em `diferentes AZ`. 
+    - Não suporta conexão com a instancia de Standby.
+    - Provem `Alta Disponibilidade`.
+
+#### Multi-AZ DB Cluster
+
+    - Cria um `Cluster` com um `Primary Instance` e duas `Instancias Standby` em `diferentes AZ`.
+    - Suporta conexão de leitura com as `Instancias Standby`.
+    - Provem `Alta Disponibilidade`.
+    
 ## RDS - StorageScaling
 
   ### Elastic Block Storage (EBS)
