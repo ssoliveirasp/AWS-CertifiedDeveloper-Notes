@@ -152,4 +152,18 @@ Burstable classes (includes t classes)
 
 ![Aurora Multi-AZ](/docs/assets/AuroraDataConsistency.png)
 
+### RDS - Aurora - Multi-Master
 
+      - Maximo 4 instancia como Master.
+      - Read replicas não podem ser adicionados.
+      - Não utiliza o servico 'Load Balance'.
+        - Esta logica precisa ser aplicada pelo cliente.
+      
+![RDS - Aurora - Multi-Master](/docs/assets/RDS_AuroraMultiMaster.png)
+
+
+### RDS - Aurora - Serveless
+      - Capacidade minima e maxima.
+      - Instancia automaticamente iniciada e parada conforme demanda.
+      - Desabilita todas as instancias se não tiver demanda (Se habilitado).
+        - pagando pela capacidade de armazenamento.
