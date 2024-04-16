@@ -108,18 +108,18 @@ Burstable classes (includes t classes)
 - Failover no Aurora é instantâneo. Usa HA nativo.
 - Aurora pode ter até 15 Read replicas com latência abaixo de 10ms enquanto o MySQL fica até 5ms.
 
-![Aurora Multi-AZ](/AWS-CertifiedDeveloper-Notes/docs/assets/AuroraMulti-AZ.png)
+![Aurora Multi-AZ](/docs/assets/AuroraMulti-AZ.png)
 
 ### RDS - Aurora - Endpoints de Conexão
-  - Cluster Endpoint
-      - Permite leitura\gravação diretamente na instancia Master.
-  - Reader Endpoint
-      - Permite leitura usando load balancer das replicas de leitura.
-  - Custom Endpoint
-     - Permite leitura\gravao criando um ponto de entrada personalizado que direcione consultas específicas para locais específicos no cluster
+     - Cluster Endpoint
+        - Permite leitura\gravação diretamente na instancia Master.
+    - Reader Endpoint
+        - Permite leitura usando load balancer das replicas de leitura.
+    - Custom Endpoint
+        - Permite leitura\gravao criando um ponto de entrada personalizado que direcione consultas específicas para locais específicos no cluster
 
- - Ponto Geral
-   - Internamente utiliza rota 53 DNS.
+    - Ponto Geral
+      - Internamente utiliza rota 53 DNS.
 
 ### RDS - Aurora - Replicacao
 - Compartilhamento do mesmo volume logico entre todas as instancias.
@@ -140,6 +140,6 @@ Burstable classes (includes t classes)
 
 - Unico que suporta 3 ou mais zonas de disponibilidade (AZ)
 
-![Aurora Multi-AZ](/AWS-CertifiedDeveloper-Notes/docs/assets/AuroraDataConsistency.png)
+![Aurora Multi-AZ](/docs/assets/AuroraDataConsistency.png)
 
 
