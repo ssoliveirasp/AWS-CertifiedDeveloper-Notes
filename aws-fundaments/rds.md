@@ -101,12 +101,13 @@ Burstable classes (includes t classes)
 
 ## RDS - Aurora
 
-- Aurora foi desenvolvido para nuvem e segundo a AWS ele é 5x mais rápido que MySQL RDS e 3x mais rápido que PostgreSQL RDS.
 - PostgreSQL e MySQL são suportados pelo Aurora. 
+- Aurora foi desenvolvido para nuvem e segundo a AWS ele é 5x mais rápido que MySQL RDS e 3x mais rápido que PostgreSQL RDS.
 - Aurora custa 20% mais que RDS, porém é mais eficiente.
 - Armazenamento Aurora cresce automaticamente em incrementos de 10GB, até 64TB.
 - Failover no Aurora é instantâneo. Usa HA nativo.
 - Aurora pode ter até 15 Read replicas com latência abaixo de 10ms enquanto o MySQL fica até 5ms.
+- Multiplas AZ na mesma VPC.
 
 ![Aurora Multi-AZ](/docs/assets/AuroraMulti-AZ.png)
 
@@ -128,6 +129,15 @@ Burstable classes (includes t classes)
 ### RDS - Aurora - Failover
 - Automatico ou Manual failover 
    - Demora 30 segundos para promover como master outra instancia.
+
+### RDS - Aurora - Throughput
+      - Master pode ser reiniciado em 60 segundos ou menos.
+      - Cluster parado a mais de 7 dias será automaticamente reiniciado.
+      - Backup diarios por default são retidos pelo máximo de 35 dias.
+      - Snapshop 
+        - podem ser criados sob demanda manualmente.
+        - São armazenados indefinitivamente e deletadas manualmente.
+        - Restore são executadas em um novo banco.
 
 ### RDS - Aurora - Consistencia de Dados
 - usa 'Quorum'
