@@ -34,11 +34,15 @@
 
 - Réplica é síncrona (sync).
 - Usam um único DNS name.
-- Automaticamente direciona os acessos para o banco **Stand-by** quando há o failover.
 - Aumenta a disponibilidade.
-- Failover em caso de perda de AZ e rede.
 - Sem necessidade de intervenção.
 - Não é usado para escalonamento.
+- Replicado Master e em cada replica.
+
+## RDS - Failover Availability Zone
+- Failover em caso de perda de AZ e rede.
+- Automaticamente direciona os acessos para o banco **Stand-by** quando há o failover.
+- em failover tempo de mudança de zona secundaria é de 60-120 segundos.
 
 ## RDS - Backup
 
@@ -70,12 +74,65 @@
 - Usuário e senha podem ser usados para logar no banco de dados.
 - IAM users também podem ser usados para autenticação (MySQL e Aurora).
 
-## RDS vs Aurora
+## DB Instance Types
 
-- Aurora é um BD proprietário da AWS.
-- PostgreSQL e MySQL são suportados pelo Aurora. Isso significa que podemos utilizar o Aurora como se fosse um dos dois bancos.
+GP - General Purpose (Standard Class - includes M Classes)
+MO - Memory Optimized (includes r and x classes)
+Burstable classes (includes t classes)
+
+
+| Banco       | GP  | GP  | MO  | MO  | MO  |
+| ----------- | --- | --- | --- | --- | --- |
+| MySql       | T2  | T3  | R3  | X1  | Z1  |
+| PostgresSQL | X   | X   | X   |     |     |
+| MariaDB     | X   | X   | X   |     |     |
+| Aurora      | X   |     | X   |     |     |
+| Oracle      | X   |     | X   |     |     |
+| SQL Server  | X   |     |     |     |     |
+|             |     |     |     |     |     |
+
+
+## RDS - Aurora
+
 - Aurora foi desenvolvido para nuvem e segundo a AWS ele é 5x mais rápido que MySQL RDS e 3x mais rápido que PostgreSQL RDS.
-- Armazenamento Aurora cresce automaticamente em incrementos de 10GB, até 64TB.
-- Aurora pode ter até 15 Read replicas com latência abaixo de 10ms enquanto o MySQL fica até 5ms.
-- Failover no Aurora é instantâneo. Usa HA nativo.
+- PostgreSQL e MySQL são suportados pelo Aurora. 
 - Aurora custa 20% mais que RDS, porém é mais eficiente.
+- Armazenamento Aurora cresce automaticamente em incrementos de 10GB, até 64TB.
+- Failover no Aurora é instantâneo. Usa HA nativo.
+- Aurora pode ter até 15 Read replicas com latência abaixo de 10ms enquanto o MySQL fica até 5ms.
+
+![Aurora Multi-AZ](/AWS-CertifiedDeveloper-Notes/docs/assets/AuroraMulti-AZ.png)
+
+### RDS - Aurora - Endpoints de Conexão
+ - Cluster Endpoint
+   - Permite leitura\gravação diretamente na instancia Master.
+ - Reader Endpoint
+   - Permite leitura usando load balancer das replicas de leitura.
+ - Custom Endpoint
+   - Permite leitura\gravao criando um ponto de entrada personalizado que direcione consultas específicas para locais específicos no cluster
+
+ - Ponto Geral
+   - Internamente utiliza rota 53 DNS.
+
+### RDS - Aurora - Replicacao
+- Compartilhamento do mesmo volume logico entre todas as instancias.
+- Não necessita de replicação (Master -> replicas).
+
+### RDS - Aurora - Failover
+- Automatico ou Manual failover 
+   - Demora 30 segundos para promover como master outra instancia.
+
+### RDS - Aurora - Consistencia de Dados
+- usa 'Quorum'
+   - Mínimo de réplicas de armazenamento necessárias para confirmar uma operação de gravação como valida, mesmo em falhas de instâncias.
+
+- usa 'Gossip Protocol' 
+   - Coordena e mantem a consistência dos dados distribuídos em um cluster
+     - As instâncias compartilhem informações sobre disponibilidade e topologia da rede, garantindo alta disponibilidade e durabilidade dos dados.
+   - protocolo 'Peer gossip' usado para copiar dados entre os 6 nós de armazenamento. 
+
+- Unico que suporta 3 ou mais zonas de disponibilidade (AZ)
+
+![Aurora Multi-AZ](/AWS-CertifiedDeveloper-Notes/docs/assets/AuroraDataConsistency.png)
+
+
