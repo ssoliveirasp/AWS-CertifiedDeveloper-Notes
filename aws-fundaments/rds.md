@@ -111,12 +111,12 @@ Burstable classes (includes t classes)
 ![Aurora Multi-AZ](/AWS-CertifiedDeveloper-Notes/docs/assets/AuroraMulti-AZ.png)
 
 ### RDS - Aurora - Endpoints de Conexão
- - Cluster Endpoint
-   - Permite leitura\gravação diretamente na instancia Master.
- - Reader Endpoint
-   - Permite leitura usando load balancer das replicas de leitura.
- - Custom Endpoint
-   - Permite leitura\gravao criando um ponto de entrada personalizado que direcione consultas específicas para locais específicos no cluster
+  - Cluster Endpoint
+      - Permite leitura\gravação diretamente na instancia Master.
+  - Reader Endpoint
+      - Permite leitura usando load balancer das replicas de leitura.
+  - Custom Endpoint
+     - Permite leitura\gravao criando um ponto de entrada personalizado que direcione consultas específicas para locais específicos no cluster
 
  - Ponto Geral
    - Internamente utiliza rota 53 DNS.
