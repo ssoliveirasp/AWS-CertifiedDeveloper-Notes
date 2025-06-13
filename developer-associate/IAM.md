@@ -47,6 +47,9 @@
 ### Q: Conceder permissão de login temporário via API
 ✅ **Use `sts:AssumeRole`**
 
+### Q: Como permitir que uma Lambda acesse S3 com segurança?  
+✅ Anexe uma **IAM Role** com permissão `s3:*` ao Lambda.
+
 ## 📌 Dicas rápidas
 - `"Effect": "Allow"` ou `"Deny"` são obrigatórios em cada statement.
 - Use `"*"` com muito cuidado — é perigoso e só em situações controladas.
