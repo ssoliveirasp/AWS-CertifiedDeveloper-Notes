@@ -34,6 +34,10 @@
 ### Q: Quero detectar vulnerabilidades nas imagens
 ✅ Ative o escaneamento de imagens do ECR com Amazon Inspector
 
+### Q: Falha ao tentar enviar imagem Docker para o ECR com CodeBuild e CodePipeline. Qual a causa mais provável?
+✅ Permissões IAM incorretas no CodeBuild
+
+
 ---
 
 ## 📌 Dicas rápidas

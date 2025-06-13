@@ -44,6 +44,9 @@
 ### Q: Quero usar HTTPS com certificado gerenciado
 ✅ Use ACM para fornecer certificados para ALB ou NLB com TLS
 
+### Q: Desenvolvedor configurou um ALB, mas esqueceu de associar target groups. Que erro aparecerá nos logs?
+✅ HTTP 503 - Service Unavailable
+
 ---
 
 ## 📌 Dicas rápidas
