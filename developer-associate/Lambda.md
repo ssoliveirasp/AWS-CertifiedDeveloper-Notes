@@ -51,3 +51,6 @@
 
 ### Q: Como evitar inconsistências e perda de dados em uma API Lambda que pode receber requisições duplicadas com IDs únicos?
 ✅ Persistir o ID único de cada requisição em uma tabela DynamoDB e fazer o Lambda verificar esse ID antes de processar.
+
+### Q: Como reduzir o tempo médio de execução de uma função Lambda com uso intenso de CPU?
+✅ Definir a memória no valor máximo ao implantar a função.

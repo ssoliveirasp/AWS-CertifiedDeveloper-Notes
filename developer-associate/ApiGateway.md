@@ -48,6 +48,9 @@
 ### Q: Preciso controle total e customização avançada
 ✅ Use REST APIs.
 
+### Q: Como dar acesso beta para devs a uma nova versão da API Gateway, sem afetar clientes atuais?
+✅ Criar um stage de desenvolvimento no API Gateway e direcionar os devs para ele.
+
 ## 📌 Dicas rápidas
 - REST APIs têm mais recursos (modelos, caching, WAF).
 - HTTP APIs são recomendadas para integração simples com Lambda e HTTP backend.

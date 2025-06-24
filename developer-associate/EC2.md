@@ -46,6 +46,13 @@
 ✅ Por padrão, os scripts de `user data` são executados como root
 ✅ Por padrão, o `user data` roda apenas no primeiro boot
 
+### Q: Por que usar Elastic Load Balancer em EC2 espalhadas por regiões e AZs?
+✅ Garante alta disponibilidade
+✅ Separa tráfego público e privado
+
+### Q: Você quer parar uma instância EC2 na região us-east-2, mas sua CLI está configurada com us-east-1 como padrão. Qual a melhor forma?
+✅ Usar o parâmetro --region
+
 ## 📌 Dicas rápidas
 - Security Groups são **stateful** (resposta é automaticamente liberada).
 - Pode associar IAM Role **somente no momento de criação**, ou depois via console/API.
