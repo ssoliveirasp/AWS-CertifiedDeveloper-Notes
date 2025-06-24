@@ -47,6 +47,10 @@
 ### Q: Desenvolvedor configurou um ALB, mas esqueceu de associar target groups. Que erro aparecerá nos logs?
 ✅ HTTP 503 - Service Unavailable
 
+### Q: Um ELB com cross-zone load balancing ativado distribui tráfego entre 2 instâncias na AZ1 e 8 na AZ2. Quanto de tráfego cada instância da AZ1 recebe?
+✅ Cada instância da AZ1 recebe 10% do tráfego, com o cross-zone ativo, o ELB ignora a zona e distribui igualmente entre todas as 10 instâncias.
+
+
 ---
 
 ## 📌 Dicas rápidas

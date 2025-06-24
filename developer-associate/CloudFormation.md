@@ -50,6 +50,9 @@
 ### Q: Preciso rodar comandos pós-criação no EC2
 ✅ Use AWS::CloudFormation::Init ou UserData (menos comum no dev)
 
+### Q: Um stack no CloudFormation falhou ao ser implantado na us-east-2 com export ELBDNSName. Qual o motivo?
+✅ Exported Output Values devem ter nomes únicos por região no CloudFormation.
+
 ## 📌 Dicas rápidas
 - **Funções Intrínsecas** importantes:
   - `!Ref` — referência simples (ex: parâmetro, recurso).

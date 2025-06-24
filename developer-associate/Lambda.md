@@ -34,13 +34,20 @@
 ## 🧪 Perguntas comuns no exame
 
 ### Q: Preciso executar código em resposta a upload no S3
-✅ **S3 Event + Lambda Trigger**
+✅ S3 Event + Lambda Trigger
 
 ### Q: Garantir baixa latência em funções que sofrem cold start
-✅ **Provisioned Concurrency**
+✅ Provisioned Concurrency
 
 ### Q: Preciso processar mensagens de uma fila em ordem
-✅ **Use Lambda com SQS FIFO Queue**
+✅ Use Lambda com SQS FIFO Queue
 
 ### Q: Garantir que Lambda possa acessar S3 e DynamoDB
-✅ **Execution**
+✅ Execution
+
+### Q: Como formatar a resposta de uma função Lambda chamada por API Gateway via requisição GET?
+✅ Usar API Gateway Mapping Templates.
+**Os Mapping Templates permitem transformar a resposta da Lambda antes de enviá-la ao cliente, controlando o formato e filtrando dados sensíveis ou desnecessários.**
+
+### Q: Como evitar inconsistências e perda de dados em uma API Lambda que pode receber requisições duplicadas com IDs únicos?
+✅ Persistir o ID único de cada requisição em uma tabela DynamoDB e fazer o Lambda verificar esse ID antes de processar.

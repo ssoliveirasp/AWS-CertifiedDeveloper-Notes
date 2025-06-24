@@ -42,6 +42,10 @@
 ### Q: Backup automático de dados da instância
 ✅ **Use Snapshots dos volumes EBS**
 
+### Q: Sobre o user data no EC2, quais afirmações são verdadeiras?
+✅ Por padrão, os scripts de `user data` são executados como root
+✅ Por padrão, o `user data` roda apenas no primeiro boot
+
 ## 📌 Dicas rápidas
 - Security Groups são **stateful** (resposta é automaticamente liberada).
 - Pode associar IAM Role **somente no momento de criação**, ou depois via console/API.

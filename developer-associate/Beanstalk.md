@@ -32,24 +32,37 @@
 ## 🧪 Perguntas comuns no exame
 
 ### Q: Preciso implantar app sem gerenciar infraestrutura
-✅ **Use Elastic Beanstalk**
+✅ Use Elastic Beanstalk
 
 ### Q: Preciso escalar app com base em carga de CPU
-✅ **Beanstalk + Auto Scaling configurado no ambiente**
+✅ Beanstalk + Auto Scaling configurado no ambiente
 
 ### Q: Aplicação precisa de banco relacional persistente
-✅ **Adicionar RDS na criação do ambiente (não recomendado para produção)**
+✅ Adicionar RDS na criação do ambiente (não recomendado para produção)
 
 ### Q: Preciso rodar tasks em background
-✅ **Usar Worker Environment + SQS**
+✅ Usar Worker Environment + SQS
 
 ### Q: Quero executar scripts de inicialização (ex: instalar pacotes)
-✅ **Usar `.ebextensions/*.config` com comandos**
+✅ Usar `.ebextensions/*.config` com comandos
+
+### Q: Em um deployment Rolling no Elastic Beanstalk, algumas instâncias falharam e foram terminadas. O que acontece com elas?
+✅ O Elastic Beanstalk cria novas instâncias com a última versão implantada com sucesso.
+
+### Q: Após deployment Beanstalk, os EC2 burst balances foram perdidos. O que pode ter causado isso?
+✅ O deployment foi feito usando immutable updates ou traffic splitting. Esses modos criam novas instâncias EC2, substituindo as antigas. 
+
+### Q: Como implantar no Beanstalk sem afetar performance em app de alto tráfego, com bom custo-benefício?
+✅ Usar Rolling with additional batch.
+
+### Q: Como manter o RDS fixo e permitir que o ElastiCache seja recriado a cada deploy no Beanstalk? (2 opções)
+✅ RDS externo via variáveis de ambiente
+✅ ElastiCache em .ebextensions/
 
 ## 📌 Dicas rápidas
-- A infraestrutura é gerenciada pela AWS, **mas pode ser personalizada**.
+- A infraestrutura é gerenciada pela AWS, `mas pode ser personalizada`.
 - Pode configurar EC2 type, VPC, ELB, Auto Scaling.
-- Logs vão para **CloudWatch**.
+- Logs vão para `CloudWatch`.
 - Ideal para apps monolíticas que precisam escalar, mas sem container/K8s.
 
 ---

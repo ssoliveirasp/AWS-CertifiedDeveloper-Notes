@@ -25,6 +25,10 @@
 ### Q: Quero redirecionar mensagens com falha para análise posterior
 ✅ Configure Dead Letter Queue
 
+### Q: Sobre a API CreateQueue do SQS, quais afirmativas são corretas?
+✅ Não é possível mudar o tipo da fila após a criação.
+✅ O visibility timeout da fila é em segundos e o padrão é 30 segundos.
+
 ---
 
 # Amazon SNS (Simple Notification Service) – Resumo para AWS Developer Certification (DVA-C02)

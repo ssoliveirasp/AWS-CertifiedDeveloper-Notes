@@ -54,6 +54,9 @@
 ### Q: Como entregar conteúdo apenas para usuários autenticados?
 ✅ Use **Signed URLs** ou **Signed Cookies**.
 
+### Q: Qual das credenciais de segurança só pode ser criada pelo root user da conta AWS?
+✅ CloudFront Key Pairs. Usadas para assinar URLs e cookies no CloudFront.
+
 ---
 
 ## 📌 Dicas rápidas

@@ -37,19 +37,22 @@
 ## 🧪 Perguntas comuns no exame
 
 ### Q: Preciso rodar containers sem gerenciar servidores
-✅ **Use ECS com Fargate**
+✅ Use ECS com Fargate
 
 ### Q: Container precisa acessar DynamoDB com segurança
-✅ **Anexe uma Task Role com permissões do DynamoDB**
+✅ Anexe uma Task Role com permissões do DynamoDB
 
 ### Q: Preciso executar tarefa sob demanda baseada em evento
-✅ **EventBridge → ECS RunTask**
+✅ EventBridge → ECS RunTask
 
 ### Q: Gerenciar 3 réplicas de um container REST
-✅ **Definir ECS Service com desiredCount = 3**
+✅ Definir ECS Service com desiredCount = 3
 
 ### Q: Preciso coletar logs dos containers
-✅ **Usar CloudWatch Logs via configuração na Task Definition**
+✅ Usar CloudWatch Logs via configuração na Task Definition
+
+### Q: A fila SQS de um app em ECS apresenta picos frequentes. Como melhorar a performance com baixo custo?
+✅ Usar backlog per instance com target tracking scaling policy.
 
 ## 📌 Dicas rápidas
 - **Task Definition** pode ter múltiplos containers (multi-container app).
