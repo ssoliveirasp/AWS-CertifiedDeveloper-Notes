@@ -59,6 +59,10 @@
 ✅ RDS externo via variáveis de ambiente
 ✅ ElastiCache em .ebextensions/
 
+### Q: Como implantar uma nova versão no Beanstalk com parte das instâncias no app antigo e parte no novo, sem custo extra?
+✅ Rolling
+**atualiza grupos de instâncias por vez. Durante a atualização, algumas continuam com a versão antiga e outras já usam a nova, sem criar instâncias extras, evitando custos adicionais.**
+
 ## 📌 Dicas rápidas
 - A infraestrutura é gerenciada pela AWS, `mas pode ser personalizada`.
 - Pode configurar EC2 type, VPC, ELB, Auto Scaling.

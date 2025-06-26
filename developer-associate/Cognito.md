@@ -32,6 +32,9 @@
 ### Q: Quero habilitar autenticação multifator para mais segurança
 ✅ Ative MFA no User Pool para proteção adicional
 
+### Q: App .NET precisa de autenticação que retorne um JWT. Qual serviço AWS usar?
+✅ Cognito User Pools
+
 ---
 
 ## 📌 Dicas rápidas

@@ -54,3 +54,7 @@
 
 ### Q: Como reduzir o tempo médio de execução de uma função Lambda com uso intenso de CPU?
 ✅ Definir a memória no valor máximo ao implantar a função.
+**No Lambda, mais memória = mais CPU, pois os dois escalam juntos.**
+
+### Q: Como enviar parte do tráfego para uma nova versão da Lambda e ter rollback rápido, com mínimo downtime?
+✅ Usar um alias apontando para a versão atual, configurar 10% do tráfego para a nova versão, e reverter o alias se algo der errado.

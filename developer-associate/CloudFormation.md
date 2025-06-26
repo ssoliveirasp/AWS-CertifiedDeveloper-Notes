@@ -53,6 +53,13 @@
 ### Q: Um stack no CloudFormation falhou ao ser implantado na us-east-2 com export ELBDNSName. Qual o motivo?
 ✅ Exported Output Values devem ter nomes únicos por região no CloudFormation.
 
+### Q: Em um template do CloudFormation, qual seção não pode usar Condition?
+✅ Parameters
+**As condições podem ser usadas com Resources, Outputs, Mappings e Metadata**
+
+### Q: Como usar !FindInMap no CloudFormation para obter o AMI certo por região?
+✅ !FindInMap [MapName, TopLevelKey, SecondLevelKey]
+
 ## 📌 Dicas rápidas
 - **Funções Intrínsecas** importantes:
   - `!Ref` — referência simples (ex: parâmetro, recurso).

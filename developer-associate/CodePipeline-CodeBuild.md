@@ -35,6 +35,9 @@
 ### Q: Quero pipeline escalável e gerenciada
 ✅ CodePipeline e CodeBuild escalam automaticamente sem servidores próprios
 
+### Q: Qual tipo de credencial NÃO é suportado pelo IAM para acesso ao CodeCommit?
+❌ IAM username e password
+**O CodeCommit usa credenciais baseadas em chaves SSH, HTTPS com credenciais temporárias da AWS (via AWS CLI)**
 ---
 
 ## 📌 Dicas rápidas

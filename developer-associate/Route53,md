@@ -1,0 +1,86 @@
+# Amazon Route 53 – Resumo para AWS Developer Certification (DVA-C02)
+
+## 🧠 Conceito geral
+- Serviço de **DNS gerenciado** da AWS.
+- Alta disponibilidade e escalabilidade.
+- Nome “Route 53” vem da porta TCP/UDP 53 (porta padrão do DNS).
+
+---
+
+## ⚙️ Funcionalidades principais
+
+### ✅ DNS (Domain Name System)
+- Traduz nomes de domínio (ex: `app.example.com`) para IPs de recursos AWS (EC2, ELB, etc.).
+
+### ✅ Health Checks
+- Verifica se um recurso está saudável antes de rotear o tráfego.
+- Pode ser usado com failover.
+
+### ✅ Domain Registration
+- Pode registrar domínios diretamente via Route 53.
+
+---
+
+## 📍 Tipos de registros DNS
+- **A Record**: aponta para IPv4.
+- **AAAA Record**: aponta para IPv6.
+- **CNAME**: alias para outro nome de domínio.
+- **Alias Record**: usado para ELB, CloudFront, S3 (não cobra).
+- **MX, TXT, NS, etc.**: suportados também.
+
+---
+
+## 🔀 Políticas de roteamento (Routing Policies)
+
+| Política              | Descrição                                                         |
+|-----------------------|--------------------------------------------------------------------|
+| **Simple**            | Um único valor de resposta fixo.                                  |
+| **Weighted**          | Divide o tráfego com base em peso percentual.                     |
+| **Latency-based**     | Direciona para a região com menor latência percebida.             |
+| **Failover**          | Roteia para primário e muda para secundário se falhar.            |
+| **Geolocation**       | Com base na **localização do usuário** (ex: Brasil → S3 BR).      |
+| **Geoproximity**      | (Usado com Route 53 Traffic Flow)                                  |
+| **Multivalue answer** | Retorna vários IPs como um pseudo-load balancer simples.          |
+
+---
+
+## 🧪 Perguntas comuns na prova
+
+### Q: Quero que usuários no Brasil acessem o servidor brasileiro
+✅ Use **Geolocation Routing**
+
+### Q: Quero distribuir tráfego entre duas versões da aplicação (v1 e v2)
+✅ Use **Weighted Routing** (ex: 70% v1, 30% v2)
+
+### Q: Quero garantir alta disponibilidade entre instâncias em diferentes regiões
+✅ Use **Failover Routing** com **health checks**
+
+### Q: Quero que usuários sempre sejam roteados para o endpoint com menor latência
+✅ Use **Latency-based Routing**
+
+### Q: Quero apontar um domínio para um Load Balancer sem usar IP fixo
+✅ Use um **Alias Record**
+
+### Q: Como garantir que apenas usuários do Brasil acessem os servidores brasileiros via DNS no Route 53?
+✅ Usar a política de roteamento GeoLocation
+
+---
+
+## 🔐 Segurança
+- Gerencia domínios com DNSSEC (se configurado).
+- Pode ser integrado com **IAM** para controle de acesso ao gerenciamento DNS.
+
+---
+
+## 📌 Dicas rápidas
+- **Alias ≠ CNAME**: Alias funciona na raiz do domínio (`example.com`), CNAME não.
+- Use **Alias para ELB, CloudFront, API Gateway** (sem cobrança adicional).
+- TTL afeta a propagação de mudanças DNS.
+
+---
+
+## 🔗 Links úteis
+- [Route 53 Developer Guide](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
+- [Routing Policies Explained](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
+- [Alias vs CNAME](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-elb-load-balancer.html)
+

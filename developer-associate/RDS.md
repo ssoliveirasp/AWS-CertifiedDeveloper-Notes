@@ -53,6 +53,9 @@
 ### Q: Como otimizar a performance de leitura em RDS PostgreSQL com mínimo esforço de desenvolvimento?
 ✅ Criar read replicas no RDS e ajustar o código para usar o endpoint das réplicas para consultas.
 
+### Q: Como otimizar leituras em RDS PostgreSQL com mínimo esforço presente e futuro?
+✅ Criar read replicas e apontar as consultas para o endpoint das réplicas.
+
 ---
 
 ## 📌 Dicas rápidas

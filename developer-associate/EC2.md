@@ -60,6 +60,8 @@
 - **User Data**: scripts shell executados no 1º boot (ex: instalar app, baixar configs).
 - **Spot Instances** são baratas, mas podem ser interrompidas (não ideais para produção).
 - **Launch Template** define configurações para instâncias EC2, como ID da AMI, tipo da instância, par de chaves, grupos de segurança e outros parâmetros..
+- **Dedicated Instances** rodam em Servidor exclusivo (Hardware) dedicado para um único cliente
+- **Dedicated Host** servidor físico totalmente dedicado a você.
 
 ---
 

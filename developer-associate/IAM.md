@@ -50,6 +50,11 @@
 ### Q: Como permitir que uma Lambda acesse S3 com segurança?  
 ✅ Anexe uma **IAM Role** com permissão `s3:*` ao Lambda.
 
+### Q: Quais entidades da AWS podem ser usadas para implantar certificados SSL/TLS? (Escolha 2)
+✅ IAM
+✅ AWS Certificate Manager (ACM)
+**IAM pode armazenar e gerenciar certificados para alguns serviços, como CloudFront. Já o ACM é a opção recomendada para gerenciar certificados SSL/TLS com renovação automática e fácil integração com serviços como ELB e API Gateway.**
+
 ## 📌 Dicas rápidas
 - `"Effect": "Allow"` ou `"Deny"` são obrigatórios em cada statement.
 - Use `"*"` com muito cuidado — é perigoso e só em situações controladas.
