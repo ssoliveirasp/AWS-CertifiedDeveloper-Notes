@@ -32,6 +32,11 @@
 ### Q: Qual API do SQS usar para deletar a fila e todo o seu conteúdo após os testes?
 ✅ DeleteQueue
 
+### Q: Quais afirmações sobre Auto Scaling EC2 não são corretas?
+❌ Auto Scaling groups não podem abranger múltiplas regiões (eles são regionais).
+❌ Um Auto Scaling group pode conter instâncias em múltiplas Availability Zones dentro da mesma região.
+
+
 ---
 
 # Amazon SNS (Simple Notification Service) – Resumo para AWS Developer Certification (DVA-C02)

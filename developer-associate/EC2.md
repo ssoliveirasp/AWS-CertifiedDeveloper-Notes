@@ -53,6 +53,10 @@
 ### Q: Você quer parar uma instância EC2 na região us-east-2, mas sua CLI está configurada com us-east-1 como padrão. Qual a melhor forma?
 ✅ Usar o parâmetro --region
 
+### Q: ELB marca todas as instâncias EC2 como unhealthy, mas o acesso direto pelo IP funciona. Quais podem ser os motivos? (Escolha 2)
+✅ O security group da EC2 não permite tráfego do security group do ALB
+✅ A rota (path) da health check está configurada incorretamente
+
 ## 📌 Dicas rápidas
 - Security Groups são **stateful** (resposta é automaticamente liberada).
 - Pode associar IAM Role **somente no momento de criação**, ou depois via console/API.
