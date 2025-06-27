@@ -50,14 +50,17 @@
 ### Q: Um ELB com cross-zone load balancing ativado distribui tráfego entre 2 instâncias na AZ1 e 8 na AZ2. Quanto de tráfego cada instância da AZ1 recebe?
 ✅ Cada instância da AZ1 recebe 10% do tráfego, com o cross-zone ativo, o ELB ignora a zona e distribui igualmente entre todas as 10 instâncias.
 
+### Q: Como analisar latência e IP dos clientes em um Application Load Balancer?
+✅ Usar ALB access logs
 
 ---
 
 ## 📌 Dicas rápidas
-- ALB é o mais usado para aplicações web modernas e microservices.
-- NLB é ideal para aplicações que exigem performance de rede pura.
-- CLB é legacy e deve ser evitado em novos projetos.
-- Use Health Checks para garantir que o load balancer envia tráfego apenas para instâncias saudáveis.
+- `ALB` é o mais usado para aplicações web modernas e microservices.
+- `NLB` é ideal para aplicações que exigem performance de rede pura.
+- `CLB` é legacy e deve ser evitado em novos projetos.
+- `Health Checks` para garantir que o load balancer envia tráfego apenas para instâncias saudáveis.
+- `ALB access logs` registram detalhes completos de cada requisição, incluindo IP de origem, latência, tempo de resposta.
 
 ---
 

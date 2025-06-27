@@ -58,3 +58,6 @@
 
 ### Q: Como enviar parte do tráfego para uma nova versão da Lambda e ter rollback rápido, com mínimo downtime?
 ✅ Usar um alias apontando para a versão atual, configurar 10% do tráfego para a nova versão, e reverter o alias se algo der errado.
+
+### Q: Time quer criar app serverless com Lambda em várias linguagens (Python, .NET, JS) e modelar infraestrutura usando essas linguagens. Qual ferramenta usar?
+✅ AWS Cloud Development Kit (CDK)

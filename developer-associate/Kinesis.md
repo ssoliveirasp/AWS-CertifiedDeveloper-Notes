@@ -61,6 +61,10 @@
 ### Q: Processar um stream com SQL em tempo real
 ✅ **Kinesis Data Analytics**
 
+### Q: Como lidar com falhas em chamadas PutRecords no Kinesis causadas por picos de tráfego e erros de throughput?
+✅ Diminuir a frequência ou o tamanho das requisições
+✅ Implementar retry com exponential backoff
+
 ## 📌 Dicas rápidas
 - **Shard = unidade de paralelismo** (pense como partição).
 - Lambda é invocada por **lote de registros** do stream.

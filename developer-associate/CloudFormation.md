@@ -60,6 +60,12 @@
 ### Q: Como usar !FindInMap no CloudFormation para obter o AMI certo por região?
 ✅ !FindInMap [MapName, TopLevelKey, SecondLevelKey]
 
+### Q: Como obter o número da conta AWS dentro de um script CloudFormation?
+✅ Usar o pseudo-parâmetro AWS::AccountId
+
+### Q: Como fazer testes de carga geográficos em múltiplas regiões AWS sem alterar o código da aplicação?
+✅ Criar um template CloudFormation com os recursos do teste de carga e usar o comando AWS CLI create-stack-set para implantar o stack em várias regiões.
+
 ## 📌 Dicas rápidas
 - **Funções Intrínsecas** importantes:
   - `!Ref` — referência simples (ex: parâmetro, recurso).

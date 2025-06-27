@@ -57,6 +57,11 @@
 ✅ O security group da EC2 não permite tráfego do security group do ALB
 ✅ A rota (path) da health check está configurada incorretamente
 
+Q: Startup usou uma instância T2.micro por 35 segundos e parou. Quanto tempo será cobrado no final do mês?
+✅ 0 segundos
+
+**Instâncias EC2 são cobradas por segundo ou hora somente enquanto estão em execução; se paradas rapidamente, não geram cobrança.**
+
 ## 📌 Dicas rápidas
 - Security Groups são **stateful** (resposta é automaticamente liberada).
 - Pode associar IAM Role **somente no momento de criação**, ou depois via console/API.

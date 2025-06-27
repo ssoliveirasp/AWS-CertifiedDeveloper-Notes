@@ -55,11 +55,19 @@
 ✅ AWS Certificate Manager (ACM)
 **IAM pode armazenar e gerenciar certificados para alguns serviços, como CloudFront. Já o ACM é a opção recomendada para gerenciar certificados SSL/TLS com renovação automática e fácil integração com serviços como ELB e API Gateway.**
 
+### Q: Qual é a única resource-based policy suportada pelo serviço IAM?
+✅ Trust policy
+
+### Q: Finance recebeu política IAM para acessar o Billing, mas não conseguem ver o serviço no console. Por quê?
+✅ É necessário ativar o acesso IAM ao Billing no console para os usuários.
+
 ## 📌 Dicas rápidas
 - `"Effect": "Allow"` ou `"Deny"` são obrigatórios em cada statement.
 - Use `"*"` com muito cuidado — é perigoso e só em situações controladas.
 - Políticas são aplicadas de forma **acumulativa** (exceto negações).
 - **Explicit Deny** sempre vence um Allow.
+**trust policies** são aplicadas a roles (funções) no IAM e definem quem pode assumir a role ("sts:AssumeRole").
+
 
 ---
 

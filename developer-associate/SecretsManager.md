@@ -30,6 +30,9 @@
 ### Q: Quero auditar acesso e alterações em segredos
 ✅ Use CloudTrail para monitorar Secrets Manager
 
+### Q: Como armazenar e rotacionar credenciais de banco RDS de forma segura, sem deixá-las no código?
+✅ Usar AWS Secrets Manager
+
 ---
 
 ## 📌 Dicas rápidas

@@ -46,6 +46,9 @@
 ### Q: Quero deploy com baixa latência e rápida escalabilidade
 ✅ **Use ECS com Fargate + Service + ALB**
 
+### Q: Como fornecer acesso persistente e compartilhado entre AZs para tarefas ECS Fargate?
+✅ Usar Amazon EFS volumes
+
 ## 📌 Dicas rápidas
 - Suporte a somente **Linux containers**.
 - Fargate **não permite acesso direto à infraestrutura** (sem SSH, sem daemon).

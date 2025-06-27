@@ -38,6 +38,10 @@
 ### Q: Qual tipo de credencial NÃO é suportado pelo IAM para acesso ao CodeCommit?
 ❌ IAM username e password
 **O CodeCommit usa credenciais baseadas em chaves SSH, HTTPS com credenciais temporárias da AWS (via AWS CLI)**
+
+### Q: Como fazer blue-green deployment com controle total dos passos em instâncias EC2?
+✅ Usar AWS CodeDeploy
+
 ---
 
 ## 📌 Dicas rápidas

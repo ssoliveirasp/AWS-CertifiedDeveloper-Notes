@@ -58,3 +58,10 @@
 
 ### Q: Otimizar leitura eventual, com menor custo
 ✅ **Eventually consistent**
+
+### Q: Como modelar dados de jogos com nome, versão e categoria, incluindo info adicional variável, e permitir buscas por nome, versão e categoria?
+✅ Criar uma tabela DynamoDB com name como partition key e version como sort key.
+✅ Criar um Global Secondary Index (GSI) com category como partition key e name como sort key.
+
+### Q: Como fazer os dados do DynamoDB expirarem automaticamente após uma semana?
+✅ Usar TTL (Time To Live)

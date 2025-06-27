@@ -34,6 +34,7 @@
 ### Q: Como gerar relatório para auditoria mostrando quem e quando acessou o SSM Parameter Store?
 ✅ Usar AWS CloudTrail para registrar todas as chamadas API feitas pelos usuários.
 
+
 ---
 
 ## 📌 Dicas rápidas

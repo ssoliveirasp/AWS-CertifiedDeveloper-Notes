@@ -29,6 +29,9 @@
 ### Q: Quero visualizar a jornada completa da requisição
 ✅ Use Trace Maps para entender o fluxo e dependências
 
+### Q: Empresa com múltiplas contas AWS quer debugar e rastrear dados entre contas e visualizar centralizadamente. Qual solução usar?
+✅ AWS X-Ray
+
 ---
 
 ## 📌 Dicas rápidas

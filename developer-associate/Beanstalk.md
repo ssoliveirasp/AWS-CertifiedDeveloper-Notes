@@ -63,6 +63,10 @@
 ✅ Rolling
 **atualiza grupos de instâncias por vez. Durante a atualização, algumas continuam com a versão antiga e outras já usam a nova, sem criar instâncias extras, evitando custos adicionais.**
 
+### Q: Qual a convenção de nomeação correta para arquivos de configuração no Elastic Beanstalk?
+✅ Usar a pasta .ebextensions/ com arquivos no formato:
+.ebextensions/<nome>.config
+
 ## 📌 Dicas rápidas
 - A infraestrutura é gerenciada pela AWS, `mas pode ser personalizada`.
 - Pode configurar EC2 type, VPC, ELB, Auto Scaling.

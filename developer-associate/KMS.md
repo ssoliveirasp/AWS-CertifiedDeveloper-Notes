@@ -44,6 +44,8 @@
 ### Q: Qual é o tamanho máximo de dados suportado pelo AWS KMS para criptografia direta?
 ✅ AWS KMS suporta até 4 KB (4096 bytes) de dados para criptografia direta.
 
+### Q: Como funciona a criptografia com KMS?
+❌ KMS não recebe dados diretamente para criptografar.
 ---
 
 ## 📌 Dicas rápidas

@@ -51,6 +51,9 @@
 ### Q: Como dar acesso beta para devs a uma nova versão da API Gateway, sem afetar clientes atuais?
 ✅ Criar um stage de desenvolvimento no API Gateway e direcionar os devs para ele.
 
+### Q: Como controlar acesso à API Gateway com autorização de um terceiro?
+✅ Usar Lambda Authorizer
+
 ## 📌 Dicas rápidas
 - REST APIs têm mais recursos (modelos, caching, WAF).
 - HTTP APIs são recomendadas para integração simples com Lambda e HTTP backend.
